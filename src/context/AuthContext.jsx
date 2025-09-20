@@ -7,7 +7,6 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  // On mount, try to fetch current user (if backend provides /auth/me)
   useEffect(() => {
     async function init() {
       try {
@@ -29,8 +28,7 @@ export function AuthProvider({ children }) {
   const login = async (email, password) => {
     const res = await api.post("/auth/login/password", { email, password });
     if (res.data?.ok) {
-      // backend returns accessToken and sets refresh cookie
-      // optionally set user from token or fetch /me
+      
       await fetchMe();
       return res.data.data;
     }

@@ -20,35 +20,7 @@ import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 
 import ProtectedRoute from "./components/ProtectedRoute";
-// const routes = [
-//   { path: "/", element: <Home /> },
 
-//   // Auth
-//   { path: "/login", element: <Login /> },
-//   { path: "/register", element: <Register /> },
-//   { path: "/verify-email", element: <VerifyEmail /> },
-//   { path: "/mfa/verify", element: <MFAVerify /> },
-//   { path: "/mfa/setup", element: <MFASetup /> },
-//   { path: "/webauthn/setup", element: <WebAuthnSetup /> },
-//   { path: "/webauthn/login", element: <WebAuthnLogin /> },
-//   { path: "/backup-codes", element: <BackupCodes /> },
-//   { path: "/backup-codes/verify", element: <BackupCodesVerify /> },
-
-//   // Dashboard
-//   { path: "/dashboard", element: <DashboardIndex /> },
-//   { path: "/dashboard/security", element: <Security /> },
-//   { path: "/dashboard/sessions", element: <Sessions /> },
-
-//   // Profile & settings
-//   { path: "/profile", element: <Profile /> },
-//   { path: "/settings", element: <Settings /> },
-
-//   // Errors
-//   { path: "/unauthorized", element: <Unauthorized /> },
-//   { path: "*", element: <NotFound /> },
-// ];
-
-// export default routes;
 const routes = [
   { path: "/", element: <Home /> },
 
